@@ -1,0 +1,24 @@
+using System;
+
+class HelloWorld {
+  static void Main() {
+      string userinput;
+      int a,b;
+      // geting the values of first and second variables from the user
+      Console.Write("Please give a number as 1st variable: ");
+      userinput=Console.ReadLine();
+      a=Convert.ToInt32(userinput);
+      
+      Console.Write("Please give a number as 2nd variable: ");
+      userinput=Console.ReadLine();
+      b=Convert.ToInt32(userinput);
+      //swapping the values of the variables without a third variable
+        a=a^b;
+        b=a^b;
+        a=a^b;
+       // printing the final results to console 
+    Console.WriteLine("The value of the 1st variable: "+a);
+    Console.WriteLine("The value of the 2nd variable: "+b);
+
+  }
+}
